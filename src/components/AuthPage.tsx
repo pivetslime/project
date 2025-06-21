@@ -216,7 +216,7 @@ export function AuthPage() {
       
       <div className="w-full max-w-md relative z-10">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-teal-600 rounded-2xl mb-4">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-4" style={{ background: 'linear-gradient(135deg, #B6C2FC 0%, #A4D2FC 100%)' }}>
             <FileText className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Planify</h1>
@@ -232,7 +232,7 @@ export function AuthPage() {
                   ? 'text-white'
                   : 'text-gray-600 hover:bg-gray-100'
               }`}
-              style={{ backgroundColor: isLogin ? '#b6c2fc' : '#a4d2fc' }}
+              style={{ backgroundColor: isLogin ? '#B6C2FC' : '#A4D2FC' }}
             >
               Вход
             </button>
@@ -243,7 +243,7 @@ export function AuthPage() {
                   ? 'text-white'
                   : 'text-gray-600 hover:bg-gray-100'
               }`}
-              style={{ backgroundColor: !isLogin ? '#b6c2fc' : '#a4d2fc' }}
+              style={{ backgroundColor: !isLogin ? '#B6C2FC' : '#A4D2FC' }}
             >
               Регистрация
             </button>
@@ -261,7 +261,7 @@ export function AuthPage() {
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  className="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                   placeholder="Введите имя пользователя"
                   required
                 />
@@ -288,7 +288,7 @@ export function AuthPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                   placeholder="Введите email"
                   required
                 />
@@ -307,7 +307,7 @@ export function AuthPage() {
                       type="text"
                       value={firstName}
                       onChange={(e) => setFirstName(e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                       placeholder="Введите имя"
                       required
                     />
@@ -320,7 +320,7 @@ export function AuthPage() {
                       type="text"
                       value={lastName}
                       onChange={(e) => setLastName(e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                       placeholder="Введите фамилию"
                       required
                     />
@@ -335,7 +335,7 @@ export function AuthPage() {
                     type="text"
                     value={patronymic}
                     onChange={(e) => setPatronymic(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                     placeholder="Введите отчество"
                   />
                 </div>
@@ -353,7 +353,7 @@ export function AuthPage() {
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full pl-12 pr-12 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  className="w-full pl-12 pr-12 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                   placeholder="Введите пароль"
                   required
                 />
@@ -376,7 +376,7 @@ export function AuthPage() {
                 type="text"
                 value={boardCode}
                 onChange={(e) => setBoardCode(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                 placeholder="Введите код доски"
               />
             </div>
@@ -390,8 +390,8 @@ export function AuthPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full text-white py-3 rounded-lg font-medium hover:opacity-90 focus:ring-2 focus:ring-blue-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
-              style={{ backgroundColor: '#b6c2fc' }}
+              className="w-full text-white py-3 rounded-lg font-medium hover:opacity-90 focus:ring-2 focus:ring-[#B6C2FC] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+              style={{ backgroundColor: '#B6C2FC' }}
             >
               {loading ? (
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />

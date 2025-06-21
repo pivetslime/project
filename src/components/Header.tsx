@@ -100,14 +100,14 @@ export function Header({ currentView, onViewChange, onCreateTask }: HeaderProps)
     });
   };
 
-  const iconColor = '#b6c2fc';
+  const iconColor = '#B6C2FC';
 
   return (
     <header className="bg-white border-b border-gray-200 px-4 md:px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-4 md:space-x-8 flex-1 min-w-0">
           <div className="flex items-center space-x-3 flex-shrink-0">
-            <div className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-xl" style={{ background: `linear-gradient(135deg, ${iconColor} 0%, #a4d2fc 100%)` }}>
+            <div className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-xl" style={{ background: `linear-gradient(135deg, ${iconColor} 0%, #A4D2FC 100%)` }}>
               <FileText className="w-4 h-4 md:w-6 md:h-6 text-white" />
             </div>
             <div className="hidden sm:block">
@@ -244,7 +244,7 @@ export function Header({ currentView, onViewChange, onCreateTask }: HeaderProps)
           <button
             onClick={onCreateTask}
             className="flex items-center space-x-1 md:space-x-2 text-white px-3 md:px-4 py-2 rounded-lg transition-all font-medium"
-            style={{ backgroundColor: '#b6c2fc' }}
+            style={{ backgroundColor: '#B6C2FC' }}
           >
             <Plus className="w-4 h-4 md:w-5 md:h-5" />
             <span className="hidden sm:inline uppercase text-sm md:text-base">СОЗДАТЬ ЗАДАЧУ</span>

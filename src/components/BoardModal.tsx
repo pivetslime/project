@@ -56,7 +56,7 @@ export function BoardModal({ isOpen, onClose }: BoardModalProps) {
               type="text"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
               placeholder="Введите название доски..."
               required
             />
@@ -70,7 +70,7 @@ export function BoardModal({ isOpen, onClose }: BoardModalProps) {
               value={formData.description}
               onChange={(e) => setFormData({ ...formData, description: e.target.value })}
               rows={3}
-              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none"
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors resize-none"
               placeholder="Описание доски..."
             />
           </div>
@@ -85,7 +85,8 @@ export function BoardModal({ isOpen, onClose }: BoardModalProps) {
             </button>
             <button
               type="submit"
-              className="flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-teal-600 text-white px-6 py-2 rounded-lg hover:from-blue-700 hover:to-teal-700 transition-all font-medium"
+              className="flex items-center space-x-2 text-white px-6 py-2 rounded-lg transition-all font-medium"
+              style={{ backgroundColor: '#B6C2FC' }}
             >
               <Save className="w-4 h-4" />
               <span>Создать доску</span>

@@ -183,7 +183,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                 ? 'text-white'
                 : 'text-gray-600 hover:bg-gray-100'
             }`}
-            style={{ backgroundColor: activeTab === 'profile' ? '#b6c2fc' : '#a4d2fc' }}
+            style={{ backgroundColor: activeTab === 'profile' ? '#B6C2FC' : '#A4D2FC' }}
           >
             <User className="w-4 h-4 inline mr-2" />
             ПРОФИЛЬ
@@ -195,7 +195,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                 ? 'text-white'
                 : 'text-gray-600 hover:bg-gray-100'
             }`}
-            style={{ backgroundColor: activeTab === 'stats' ? '#b6c2fc' : '#a4d2fc' }}
+            style={{ backgroundColor: activeTab === 'stats' ? '#B6C2FC' : '#A4D2FC' }}
           >
             <BarChart3 className="w-4 h-4 inline mr-2" />
             СТАТИСТИКА
@@ -222,7 +222,8 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                   <button
                     type="button"
                     onClick={() => fileInputRef.current?.click()}
-                    className="absolute bottom-0 right-0 p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+                    className="absolute bottom-0 right-0 p-2 text-white rounded-full transition-colors"
+                    style={{ backgroundColor: '#B6C2FC' }}
                   >
                     <Upload className="w-4 h-4" />
                   </button>
@@ -247,7 +248,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                     type="text"
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                     required
                   />
                 </div>
@@ -259,7 +260,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                     type="text"
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                     required
                   />
                 </div>
@@ -274,7 +275,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                   type="text"
                   value={formData.patronymic}
                   onChange={(e) => setFormData({ ...formData, patronymic: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                 />
               </div>
 
@@ -288,7 +289,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                     required
                   />
                 </div>
@@ -320,7 +321,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                         type={showPasswords.current ? 'text' : 'password'}
                         value={formData.password}
                         onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                        className="w-full px-4 py-3 pr-12 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                        className="w-full px-4 py-3 pr-12 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                         placeholder="Введите текущий пароль"
                       />
                       <button
@@ -342,7 +343,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                         type={showPasswords.new ? 'text' : 'password'}
                         value={formData.newPassword}
                         onChange={(e) => setFormData({ ...formData, newPassword: e.target.value })}
-                        className="w-full px-4 py-3 pr-12 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                        className="w-full px-4 py-3 pr-12 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                         placeholder="Введите новый пароль"
                       />
                       <button
@@ -364,7 +365,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                         type={showPasswords.confirm ? 'text' : 'password'}
                         value={formData.confirmPassword}
                         onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
-                        className="w-full px-4 py-3 pr-12 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                        className="w-full px-4 py-3 pr-12 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#B6C2FC] focus:border-[#B6C2FC] transition-colors"
                         placeholder="Подтвердите новый пароль"
                       />
                       <button
@@ -396,8 +397,8 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                 
                 <button
                   type="submit"
-                  className="flex items-center space-x-2 text-gray-800 px-6 py-3 rounded-xl transition-all font-medium uppercase"
-                  style={{ backgroundColor: '#b6c2fc' }}
+                  className="flex items-center space-x-2 text-white px-6 py-3 rounded-xl transition-all font-medium uppercase"
+                  style={{ backgroundColor: '#B6C2FC' }}
                 >
                   <Save className="w-4 h-4" />
                   <span>СОХРАНИТЬ</span>
